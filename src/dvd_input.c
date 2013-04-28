@@ -61,6 +61,7 @@ static int      (*DVDcss_close) (dvdcss_t);
 static int      (*DVDcss_seek)  (dvdcss_t, int, int);
 static int      (*DVDcss_read)  (dvdcss_t, void *, int, int);
 static char *   (*DVDcss_error) (dvdcss_t);
+#define DVDCSS_SEEK_KEY (1 << 1)
 #endif
 
 /* The DVDinput handle, add stuff here for new input methods. */
